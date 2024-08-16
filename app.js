@@ -60,8 +60,8 @@ function copiar(){
     document.execCommand("copy");
 }
 //validar si ingresa letras con acentos o caracteres especiales
-textArea.addEventListener("keyup",function(event){
-    const regex = /^[a-z\s,.:;]*$/;
+textArea.addEventListener("input",function(event){
+    const regex = /^[a-z\s.,]*$/;
     if(!regex.test(textArea.value)){
         alert("Por favor ingresa solo letras minusculas sin acentos ni caracteres especiales");
         textArea.value = "";
