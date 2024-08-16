@@ -16,7 +16,7 @@ function btnEncriptar(){
     textArea.value = "";
     mensaje.style.backgroundImage = "none";
     boton.removeAttribute("hidden");
-    mensaje.style.display = "inline";
+    mensaje.style.display = "block";
     texto.innerHTML = "";
     texto2.innerHTML = "";
     mensaje.style.height = "16rem";
@@ -26,7 +26,7 @@ function btnDesencriptar(){
     mensaje.value = textoDesencriptado;
     textArea.value = "";
     mensaje.style.backgroundImage = "none";
-    mensaje.style.display = "inline";
+    mensaje.style.display = "block";
     boton.removeAttribute("hidden");
     texto.innerHTML = "";
     texto2.innerHTML = "";
