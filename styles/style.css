@@ -170,13 +170,11 @@ main {
     }
     .text {
         font-size: 0.6rem;
-        
     }
     .informacion {
         text-align: center;
     }
     .resultado{
-        
         width: 80%;
     }
     .mensaje {
