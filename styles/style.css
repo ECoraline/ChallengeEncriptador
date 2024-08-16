@@ -159,7 +159,7 @@ main {
     .text-area{
         width: 90%;
         padding: 3%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .botones {
         flex-direction: column;
@@ -179,13 +179,14 @@ main {
     }
     .mensaje {
         padding: 5%;
-        width: 15rem;
+        width: auto;
         background-image: none;
         height: 1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
     }
     ::placeholder {
         font-size: 1rem;
-        text-align: center;
+        text-align: justify;
     }
 }
