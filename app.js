@@ -19,7 +19,7 @@ function btnEncriptar(){
     mensaje.style.display = "block";
     texto.innerHTML = "";
     texto2.innerHTML = "";
-    mensaje.style.height = "16rem";
+    mensaje.style.height = "100%";
 }
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(textArea.value);
@@ -30,7 +30,7 @@ function btnDesencriptar(){
     boton.removeAttribute("hidden");
     texto.innerHTML = "";
     texto2.innerHTML = "";
-    mensaje.style.height = "16rem";
+    mensaje.style.height = "100%";
 }
 
 function encriptar(stringEncriptada){

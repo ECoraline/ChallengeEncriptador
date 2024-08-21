@@ -13,29 +13,43 @@
     font-weight: 400;
     font-size: 1.8rem;
 }
-.logo {
-    padding-top: .5rem;
-    margin-left: .5rem;
-    width: 90%;
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: .5rem;
 }
 .header {
     display: flex;
     justify-content: flex-start;
 }
-
-main {
-    width: 100%;
+.logo {
+    padding-top: .5rem;
+    margin-left: .5rem;
+    width: 90%;
+}
+.contenido__entrada{
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50%;
 }
 .text-area {
     border: none;
     color: var(--color-primario);
     margin-top: 1rem;
     text-transform: lowercase;
-    height: 13.5rem;
+    height: 100%;
     resize: none;
 }
 ::placeholder {
@@ -45,7 +59,6 @@ main {
 .text-area:focus {
     outline: none;
 }
-
 .btn-desencriptar {
     background-color: #d8dfe8;
     border: 1px solid var(--color-primario);
@@ -73,16 +86,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    height: auto;
 }
 .mensaje {
     background-color: var(--transparencia);
     background-image: url("/assets/Muñeco.png");
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
     border: none;
-    width: 100%;
     color: var(--color-primario);
-    height: 13rem;
+    height: 80%;
     overflow: hidden;
     resize: none;
 }
@@ -131,18 +146,15 @@ main {
     color: var(--color-secundario);
     /* border-radius: 1rem; */
 }
+
 @media (max-width: 1200px) {
-    main {
+    .body {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        gap: 1rem;
-    }
-    .botones {
-        justify-content: space-evenly;
     }
     .contenido {
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
     .resultado{
@@ -180,14 +192,12 @@ main {
     .informacion {
         text-align: center;
     }
-    .resultado{
-        width: 80%;
-    }
+    
     .mensaje {
         padding: 3%;
         width: auto;
         background-image: none;
-        height: 1rem;
+        height: auto;
         font-size: 1rem;
         text-align: center;
     }
