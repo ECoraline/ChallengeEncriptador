@@ -90,6 +90,7 @@ main {
     height: auto;
 }
 .mensaje {
+    width: 90%;
     background-color: var(--transparencia);
     background-image: url("../assets/Muñeco.png");
     background-position: center;
@@ -97,7 +98,7 @@ main {
     text-align: center;
     border: none;
     color: var(--color-primario);
-    height: 80%;
+    height: 90%;
     overflow: hidden;
     resize: none;
 }
@@ -192,7 +193,6 @@ main {
     .informacion {
         text-align: center;
     }
-    
     .mensaje {
         padding: 3%;
         width: auto;
