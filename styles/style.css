@@ -91,7 +91,7 @@ main {
 }
 .mensaje {
     background-color: var(--transparencia);
-    background-image: url("assets/Muñeco.png");
+    background-image: url("../assets/Muñeco.png");
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
